@@ -2,5 +2,8 @@
     "build": {
         "dockerfile": "./Dockerfile"
     },
-    "containerUser": "pwuser"
+    "containerUser": "pwuser",
+    "containerEnv": {
+        "XDG_SESSION_TYPE": "${localEnv:XDG_SESSION_TYPE}"
+    }
 }
